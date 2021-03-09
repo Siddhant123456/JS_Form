@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+</head>
+<body>
+    <nav class="nav">
+        <h1 style="float: left; padding-top: 15px; padding-left: 10px;">Feedback</h1>
+        <h1 style="float: right; padding-top: 15px; padding-right: 10px;">Your Feedback is Important</h1>
+        <a href="../AboutMe/index.html">About Me</a>
+        <a href="../AboutMe/books.html">Books</a>
+    </nav>
+     
+    <main>
+        <div class="form" id = "form">
+            <h1>
+                Please Enter Your Feedback
+            </h1>
+            <form id="formData">
+                <div class="form-group row">
+                  <label for="fname" class="col-sm-2 col-form-label">First Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" placeholder="First Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="mname" class="col-sm-2 col-form-label">Middle Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mname" placeholder="Middle Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="sugg" class="col-sm-2 col-form-label">Suggestions</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="sugg" placeholder="Your Suggestions">
+                    </div>
+                  </div>
+                <fieldset class="form-group">
+                  <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0"><b>Gender</b></legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input Gender" type="radio"  name = "gender" id="Male" value="Male" checked>
+                        <label class="form-check-label" for="Male">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input Gender" type="radio"  name = "gender" id="female" value="Female">
+                        <label class="form-check-label" for="Female">
+                          Female
+                        </label>
+                      </div>
+
+                    </div>
+                  </div>
+                </fieldset>
+                
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary" onclick="validate();return false;">+</button>
+                    <button type="submit" class="btn btn-primary" onclick="reset()">-</button>
+                    
+                </div>
+                </div>
+              </form>
+        </div>
+        <div class="display" >
+          <p style = "padding-top: 20px; padding-left: 20px;" id = "display"></p>
+        </div>
+
+
+
+
+    </main>
+    
+
+
+
+    <footer class="footer">
+        <p>&copyCopyright 2021</p>
+    </footer>
+
+    
+    
+    
+    
+    
+    <script src="script.js" ></script>
+</body>
+</html>
